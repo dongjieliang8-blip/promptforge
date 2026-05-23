@@ -89,7 +89,7 @@ class TesterAgent:
             for test_input in test_inputs:
                 # 测试原始提示词
                 orig_response = client.messages.create(
-                    model="mimo-7b",
+                    model="mimo-v2.5",
                     max_tokens=1024,
                     messages=[{"role": "user", "content": f"{original_prompt}\n\n输入：{test_input}"}],
                 )
@@ -98,7 +98,7 @@ class TesterAgent:
 
                 # 测试优化提示词
                 opt_response = client.messages.create(
-                    model="mimo-7b",
+                    model="mimo-v2.5",
                     max_tokens=1024,
                     messages=[{"role": "user", "content": f"{optimized_prompt}\n\n输入：{test_input}"}],
                 )

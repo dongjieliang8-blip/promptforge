@@ -1,6 +1,6 @@
 # PromptForge — 多Agent协作提示词工程优化流水线
 
-基于 Claude Code / DeepSeek API / MiMo 模型的多智能体提示词优化流水线，实现提示词分析→方案设计→效果测试→迭代优化的全自动化闭环。
+基于 Claude Code / DeepSeek API / MiMo-v2.5的多智能体提示词优化流水线，实现提示词分析→方案设计→效果测试→迭代优化的全自动化闭环。
 
 ## 架构
 
@@ -30,7 +30,7 @@ python -m src.main run ./demo/sample_task
 ## 技术栈
 
 - Python
-- Claude Code / DeepSeek API / MiMo 模型
+- Claude Code / DeepSeek API / MiMo-v2.5
 - Jinja2 模板引擎
 
 ## License
